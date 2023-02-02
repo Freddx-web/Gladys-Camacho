@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.Loader.css">
+    <link rel="stylesheet" type="text/css" href="css/style.menu.css">
+
+    <style type="text/css">
+    	.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #9e9ea1
+  color: white;
+  text-align: center;
+}
+    </style>
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+
+
+
+
+
+
+
+
+
+
+      <p>Click on the element below to open the side navigation menu.</p>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <h2>Animated Sidenav Example</h2>
+      
+
+
+
+
+    
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
