@@ -1,6 +1,6 @@
 .button {
     position: relative;
-    background-color: #af4c93;
+    background-color: #4c63af;
     border: none;
     font-size: 20px;
     color: #FFFFFF;
@@ -12,8 +12,7 @@
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-
-    box-shadow: 0 2px 5px 0 #fff, inset 0px 0px 9px 2px #f384c2;
+    box-shadow: 0 2px 5px 0 #fff, inset 0px 0px 9px 2px #84e8f3;
 }
 
 .button:after {

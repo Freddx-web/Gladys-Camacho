@@ -17,18 +17,35 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
 }
 
-
+/*shadows*/
 .w3-card, .w3-card-2 {
-    box-shadow: 0 2px 5px 0 #fff, 0px 1px 20px 0 #ff91cee0;
+    box-shadow: 0 2px 5px 0 #fff, 0px 1px 20px 0 #91faffe0;
 }
+
 .w3-button:hover {
     color: #000!important;
-    background-color: #ffe9f88f!important;
+    background-color: #fff!important;
 }
-/* Center the loader */
 
+/**/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d9fefff2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+
+/* Center the loader */
 #loader {
-  position: absolute;
+    position: absolute;
     left: 50%;
     top: 50%;
     z-index: 1;
@@ -37,11 +54,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: -75px 0 0 -75px;
     border: 3px solid #f3f3f373;
     border-radius: 50%;
-    border-top: 3px solid #ff20bb9e;
+    border-top: 3px solid #20ffffab;
     width: 120px;
     height: 120px;
     animation: spin 1s cubic-bezier(0.01, 0.42, 0.2, 1.15) infinite;
 }
+
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -129,8 +147,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/********Gallery********/
 
+
+/*footer*/
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+    color: #000000b8!important;
+    background-color: #cfeaff8a!important;
+}
+
+
+
+
+
+/********Gallery********/
 
 </style>
   </head>
@@ -151,21 +180,13 @@ h1, h2, h3, h4, h5, h6 {
       <br>
       <div style="display:none;" id="myDiv" class="animate-bottom">
 
-       
-
-
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">Cursos</a>
-          <a href="#">Servicios</a>
-          <a href="#">Seminario</a>
-          <a href="#">Medios</a>
+          <a href="#">Pag1</a>
+          <a href="#">Pag2</a>
+          <a href="#">Pag3</a>
+          <a href="#">Pag4</a>
         </div>
-
-
-
-
-
 
         <div class="w3-content" style="max-width:1100px">
           <div class="w3-row w3-padding-64" id="about">
@@ -175,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
             <div class="w3-col m6 w3-padding-large">
               <h1 class="w3-center">Acerca de Gladys Camacho</h1><br>
                 <p class="w3-large">Quiero darles la bienvenida de todo corazón y agradecerles por pasar unos momentos aquí conmigo. . Tu tiempo es precioso, y lo valoro.
-                Mi nombre es Gladys Camacho Mujer, Esposa, madre de dos hijos Pastora y escritora del Libro Hay un milagro en tu Miembro Conferencista avalada por Cámara internacional de Conferencista Soñadora y fundadora de la Asociación Internacional Partera de sueños Predico la palabra de Dios llevando un Mensaje de amor, fe y esperanza a la humanidad He participado en programas de radio y canal de TV en España Trabajo con el Ministerio junto a mi familia y también apoyo a las Misiones en la nación de Pakistán, atendiendo a niños, mujeres y personas adultas
+                Mi nombre es Gladys Camacho Mujer, Esposa, madre de dos hijos Pastora y escritora del Libro Hay un milagro en tu Miembro Conferencista avalada por Cámara internacional de Conferencista Soñadora y fundadora de la Asociación Internacional Partera de sueños Predico la palabra de Dios llevando un Mensaje de amor, fe y esperanza a la humanidad He participado en programas de <b>radio</b> y <b>canal</b> de <b>TV</b> en España Trabajo con el Ministerio junto a mi familia y también apoyo a las Misiones en la nación de Pakistán, atendiendo a niños, mujeres y personas adultas
                 </p>
                 <p class="w3-large w3-text-grey w3-hide-medium">Predico la palabra de Dios llevando un Mensaje de amor, fe y esperanza a la humanidad
                 He participado en programas de radio y canal de TV en España 
